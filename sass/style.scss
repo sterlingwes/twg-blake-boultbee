@@ -72,6 +72,18 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 }
 
+.margin-b-30p {
+  margin-bottom: 30px;
+}
+
+.margin-b-40p {
+  margin-bottom: 40px;
+}
+
+.margin-b-60p {
+  margin-bottom: 60px;
+}
+
 /*
 ====================================
 Header Styles
@@ -285,6 +297,13 @@ General Sections
 	padding: 15px 0;
 }
 
+.small-container {
+  width: 60%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
 .green-bg {
 	background: $GREEN;
 }
@@ -317,29 +336,49 @@ Services section
   display: block;
 }
 
-/*
-====================================
-Reports section
-====================================
-*/
+// TEAM PAGE
 
-.reports i {
-  font-size: 3.5rem;
+.two-column--team {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  align-items: center;
 }
 
-.reports {
-  .row1 {
-    margin-bottom: 30px;
+.member {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.member-info {
+  margin-left: 30px;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+
+  p {
+    font-size: 0.8rem;
   }
 }
 
-.report-item {
-  display: inline-block;
+.team-content {
 
-  @media (max-width: $TABLET) {
-    display: block;
+  h3 {
+    text-align: left;
+  }
+
+  h4 {
+    text-align: left;
+    color: $PURPLE;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
   }
 }
+
 
 // CONTACT US
 

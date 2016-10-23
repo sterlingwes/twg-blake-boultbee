@@ -36,34 +36,49 @@
 <section class="green-bg">
   <div class="section-container">
     <h2>Services</h2>
+
+    <div class="two-column--team margin-b-40p">
+      <div class="member" style="background:url('<?php the_field('image_1'); ?>'); background-size:cover"></div>
+      <div class="member-info">
+        <h3><?php the_field('first_service'); ?></h3>
+        <p><?php the_field('first_service_description'); ?></p>
+      </div>
+    </div>
+
+    <div class="two-column--team margin-b-40p">
+      <div class="member" style="background:url('<?php the_field('image_2'); ?>'); background-size:cover"></div>
+      <div class="member-info">
+        <h3><?php the_field('second_service'); ?></h3>
+        <p><?php the_field('second_service_description'); ?></p>
+      </div>
+    </div>
+
+    <div class="two-column--team margin-b-40p">
+      <div class="member" style="background:url('<?php the_field('image_3'); ?>'); background-size:cover"></div>
+      <div class="member-info">
+        <h3><?php the_field('third_service'); ?></h3>
+        <p><?php the_field('third_service_description'); ?></p>
+      </div>
+    </div>
+
+    <div class="two-column--team margin-b-40p">
+      <div class="member" style="background:url('<?php the_field('image_4'); ?>'); background-size:cover"></div>
+      <div class="member-info">
+        <h3><?php the_field('fourth_service'); ?></h3>
+        <p><?php the_field('fourth_service_description'); ?></p>
+      </div>
+    </div>
     
-    <!-- <div class="services-columns"> -->
-      <div class="service-item" style="background: url('<?php the_field('image_1'); ?>'); background-size:cover;"></div>
-      <div class="service-info"><h3><?php the_field('first_service'); ?></h3></div>
-      <div class="service-item" style="background: url('<?php the_field('image_2'); ?>'); background-size:cover;"></div>
-      <div class="service-info"><h3><?php the_field('second_service'); ?></h3></div>
-      <div class="service-item" style="background: url('<?php the_field('image_3'); ?>'); background-size:cover;"></div>
-      <div class="service-info"><h3><?php the_field('third_service'); ?></h3></div>
-      <div class="service-item" style="background: url('<?php the_field('image_4'); ?>'); background-size:cover;"></div>
-      <div class="service-info"><h3><?php the_field('fourth_service'); ?></h3></div>
-    <!-- </div> -->
   </div>
 </section>
 
 <section class="white-bg">
   <div class="section-container">
-    <h2>Reports</h2>
-      <div class="reports aligncenter">
-        <div class="row1">
-          <div class="report-item"><a href="/" class="button"><i class="fa fa-file" aria-hidden="true"></i> Christmas Letter 2007</a></div>
-          <div class="report-item"><a href="/" class="button"><i class="fa fa-file" aria-hidden="true"></i> Christmas Letter 2006</a></div>
-          <div class="report-item"><a href="/" class="button"><i class="fa fa-file" aria-hidden="true"></i> Christmas Letter 2005</a></div>
-        </div>
-        <div class="row2">
-          <div class="report-item"><a href="/" class="button"><i class="fa fa-file" aria-hidden="true"></i> Christmas Letter 2004</a></div>
-          <div class="report-item"><a href="/" class="button"><i class="fa fa-file" aria-hidden="true"></i> Christmas Letter 2003</a></div>
-        </div>
-      </div>
+    <h2><?php the_field('heading_the_goal'); ?></h2>
+    <p><?php the_field('body_text_the_goal'); ?></p>
+    <div class="margin-b-40p"></div>
+    <h2><?php the_field('heading_who_do_we_help'); ?></h2>
+    <p><?php the_field('body_text_who_do_we_help'); ?></p>
   </div>
 </section>
 
