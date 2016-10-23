@@ -1,0 +1,631 @@
+/*
+* Theme Name: Blake Boultbee Theme
+* Theme URI: http://www.bbyos.org
+* Description: Theme for Blake Boultbee
+* Version: 1.0
+* Author: Justine Chiu and friends
+* Author URI: http://www.bbyos.org
+*/
+
+$PURPLE: #AB0592;
+$GREEN: #D6E5E4;
+$DONATEGREEN: #E5FCF5;
+$DONATEGREENAFTER: #7d8a86;
+$DONATEBARGREENAFTER: #7d8a86;
+$TABLET: 768px;
+$PALM: 480px;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import 'normalize';
+@import 'typography';
+@import 'sidebar';
+@import 'comments';
+@import 'footer';
+/*
+====================================
+Default Styling
+====================================
+*/
+
+img {
+	max-width: 100%;
+}
+
+body {
+	color: #333;
+}
+
+body, html {
+	font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Palatino', serif;
+}
+
+.homepage {
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+}
+
+.page {
+  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.content {
+	float: left;
+	width: 65%;
+	margin-right: 5%;
+}
+
+.full {
+	width: 100%;
+}
+
+/*
+====================================
+Header Styles
+====================================
+*/
+
+.home-header {
+	width: 100%;
+	height: 70vh;
+	background: url('/blakeboultbee/wp-content/uploads/2016/10/bb.jpeg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+
+	h2 {
+		font-family: 'Open Sans';
+		font-size: 2rem;
+    z-index: 10;
+	}
+
+  .section-container {
+    margin: auto;
+    position: relative;
+  }
+
+}
+
+.light {
+
+  height: auto;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(255,255,255,0.6);
+  }
+}
+
+.light-hero {
+
+  height: auto;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70vh;
+    content: '';
+    background-color: rgba(255,255,255,0.6);
+  }
+}
+
+.main-header {
+	background-color: white;
+}
+
+.margin-auto {
+	margin: auto;
+}
+
+.button {
+	padding: 10px 15px;
+}
+
+.button-donate {
+	background-color: $DONATEGREEN;
+  font-size: 1.5rem;
+  padding: 10px 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  &:hover,&:focus {
+    background-color: $DONATEGREENAFTER;
+  }
+}
+
+a.button {
+	color: black;
+}
+
+.history-bg {
+  position: relative;
+  background: url('/blakeboultbee/wp-content/uploads/2016/10/map-bb.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+
+  .section-container {
+    position: relative;
+  }
+}
+
+/*
+====================================
+Slogan and Address
+====================================
+*/
+
+.slogan-address {
+	background: $GREEN;
+	padding: 20px;
+
+	p {
+		margin: 0;
+	}
+
+}
+
+.slogan {
+	font-size: 110%;
+}
+
+.address {
+	font-size: 75%;
+}
+
+.donate-sticky-bar {
+  padding: 10px;
+  background: $DONATEGREEN;
+  text-align: center;
+  position: -webkit-sticky;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+
+  &:hover,&:focus {
+    background: $DONATEBARGREENAFTER;
+  }
+}
+
+.donate-link {
+  color: black;
+
+  &:hover,&:focus {
+    color: black !important;
+  }
+}
+
+.home-navigation {
+	padding: 10px;
+	background: white;
+	text-align: center;
+	position: -webkit-sticky;
+	ul {
+		width: 100%;
+	}
+}
+
+.sticky, .stickydonate {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+
+.stickywhite {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 44px;
+  z-index: 100;
+  border-top: 0;
+}
+
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px;
+	align-items: center;
+}
+
+.logo,
+ul {
+	flex: 1 0 50%;
+}
+
+button {
+	background: $PURPLE;
+	color: white;
+	padding: 20px;
+  border: 0px none transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+	background: $GREEN;
+	color: black;
+  border: 1px dashed #CCCCCC;
+}
+
+/*
+====================================
+General Sections
+====================================
+*/
+
+.section-container {
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+
+.green-bg {
+	background: $GREEN;
+}
+
+.white-bg {
+	background: white;
+}
+
+/*
+====================================
+Services section
+====================================
+*/
+
+.services-columns {
+  display: flex;
+  justify-content: center;
+}
+
+.service-item {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px; 
+  background: $PURPLE;
+  margin-right: 10px;
+  display: block;
+}
+
+.service-info {
+  display: block;
+}
+
+/*
+====================================
+Reports section
+====================================
+*/
+
+.reports i {
+  font-size: 3.5rem;
+}
+
+.reports {
+  .row1 {
+    margin-bottom: 30px;
+  }
+}
+
+.report-item {
+  display: inline-block;
+
+  @media (max-width: $TABLET) {
+    display: block;
+  }
+}
+
+// CONTACT US
+
+.contact {
+
+  form label,
+  form input,
+  textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  form input,
+  textarea {
+    padding: 10px 15px;
+  }
+
+}
+
+.form, 
+.map {
+  width: 48%;
+}
+
+.map {
+  line-height: 3rem;
+}
+
+.map img {
+  display: block;
+  width: 100%;
+}
+
+.data span {
+  font-size: 90%;
+}
+
+.data .green-text {
+  color: $GREEN;
+}
+
+.data .grey-text {
+  color: grey;
+}
+
+.form label {
+  color: $GREEN;
+  padding: 5px 0;
+}
+
+.form input {
+  height: 50px;
+}
+
+.form input,
+.form textarea {
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+}
+
+/*
+====================================
+Menu and Hamburger
+====================================
+*/
+
+ul.menu {
+	margin: 0;
+	padding: 0;
+
+	li {
+		display: inline;
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			color: #AB0592;
+		}
+	}
+}
+
+.fullmenu {
+
+  background: white;
+  text-align: center;
+  margin: 0 auto;
+
+	ul {
+		display: flex;
+		list-style: none;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.hamburger-menu ul.menu, .fullmenu ul.menu {
+	text-align: center;
+}
+
+.hamburger-menu {
+	text-transform: uppercase;
+  padding: 20px 0;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+
+  ul.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    list-style: none;
+    font-size: 2em;
+    height: 100%;
+    margin-bottom: 15px;
+  }
+  a {
+    color: $PURPLE;
+    &:hover,&:focus {
+      color: #3F3F3F;
+    }
+  }
+}
+
+.fullmenu ul.menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.show {
+  display: block;
+}
+
+.burger {
+  visibility: hidden;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 6px;
+  right: 36px;
+  background: #fff;
+}
+
+.patty {
+  background: $PURPLE;
+  height: 4px;
+  width: 24px;
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transition: all 0.5s ease-in-out;
+  &::after {
+    content: "";
+    background: $PURPLE;
+    height: 4px;
+    position: absolute;
+    width: 100%;
+  }
+  &::before {
+    content: "";
+    background: $PURPLE;
+    height: 4px;
+    position: absolute;
+    width: 100%;
+    bottom: 200%;
+    left: 0;
+  }
+  &::after {
+    top: 200%;
+    left: 0;
+  }
+}
+
+.logo-and-nav-container {
+  display: flex;
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-bg {
+	background-image: url('/blakeboultbee/wp-content/uploads/2016/10/bbyoshorz_purple.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: block;
+	height: 117px;
+	width: 100%;
+  max-width: 550px;
+}
+
+.logo {
+  width: 25%;
+}
+
+.logo-heading {
+  font-size: 3rem;
+  margin: 0;
+}
+
+nav {
+  ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline;
+      margin-right: 0;
+      a {
+        color: #4B4B4B;
+      }
+    }
+  }
+  // width: 75%;
+}
+
+@media (max-width: 768px) {
+  nav ul li a {
+    font-size: 2em;
+  }
+
+  .fullmenu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    visibility: visible;
+  }
+
+  .burger {
+    visibility: visible;
+  }
+
+  .copyright {
+    font-size: 1.4em;
+  }
+}
+
+// NON-FRONT PAGE PAGES
+
+.logo-single {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page img {
+  height: auto;
+}
+
+
+//NAVIGATION
+
+.header-navigation-current {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 999;
+    display: block;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: $PURPLE;
+  }
+}
