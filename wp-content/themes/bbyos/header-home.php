@@ -16,7 +16,7 @@
 <header class="home-header">
 <div class="light-hero"></div>
   <div class="section-container margin-auto aligncenter">
-    <img src="http://localhost:8888/blakeboultbee/wp-content/uploads/2016/10/bbyoshorz_purple.png" alt="Blake Boultbee">
+    <img src="/wp-content/uploads/2016/10/bbyoshorz_purple.png" alt="Blake Boultbee">
     <h2>Youth Outreach Service</h2>
     <a href="https://www.canadahelps.org/dn/4075" class="button button-donate">Donate</a>    
   </div>

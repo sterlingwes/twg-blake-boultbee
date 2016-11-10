@@ -1,2 +1,4 @@
 node_modules
 .DS_Store
+.data
+wp-content/themes/bbyos/style.css*
